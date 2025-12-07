@@ -13,3 +13,6 @@ GitHub Pages, Netlify, Vercel u otra plataforma gratuita.
 ·      El enlace debe permitir acceder a la página
 completamente funcional para revisar su diseño, estilos y funcionamiento en
 JavaScript.
+
+solo desarrollar frontend usando arrays y objetos.
+usar lo minimo posible pero que funcione bien. un codigo corto y claro vale mas que uno largo y confuso.
