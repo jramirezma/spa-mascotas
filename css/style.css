@@ -1,0 +1,162 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --color-primario: #4caf50;
+  --color-secundario: #333;
+  --color-advertencia: #ff9800;
+  --fondo: #f5f5f5;
+  --spacing: 16px;
+  --radius: 6px;
+}
+
+/* ===== BASE ===== */
+body {
+  background: var(--fondo);
+  font-family: Arial, sans-serif;
+  color: var(--color-secundario);
+  padding: var(--spacing);
+}
+
+/* Utilidades */
+.hidden { display: none; }
+.mensaje-error { color: red; margin-top: 8px; font-size: 14px; }
+
+/* ===== LOGIN ===== */
+.auth-section {
+  max-width: 380px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: calc(100% - 32px); /* Toma 100% menos el padding del body (16px * 2) */
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+}
+
+.auth-container button {
+  padding: 12px;
+  background: var(--color-primario);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  opacity: 0.9;
+}
+
+.header-content {
+    display: flex;
+		flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.header-content .logo {
+    width: 80px; 
+    height: 80px;
+    object-fit: contain;
+}
+
+.header-content h1 {
+    font-size: 1.5em; 
+    margin: 0; 
+    line-height: 1; 
+    text-align: center; 
+}
+
+
+/* Estilos para el contenedor de la contraseña */
+.password-container {
+  display: flex; 
+}
+.password-container input {
+  flex-grow: 1;
+}
+
+/* Estilos para el checkbox de mostrar contraseña */
+.show-password-wrapper {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    margin-top: -8px; 
+}
+.show-password-wrapper label {
+    font-size: 14px;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+
+/* ===== NAV ===== */
+nav {
+  background: #fff;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+nav button {
+  padding: 8px 14px;
+  border: none;
+  background: var(--color-primario);
+  color: #fff;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+/* ===== MAIN ===== */
+main {
+  margin-top: 24px;
+  background: #fff;
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== BANNER ===== */
+#banner-advertencia {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: var(--color-advertencia);
+  text-align: center;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
