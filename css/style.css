@@ -68,6 +68,18 @@ body {
   opacity: 0.9;
 }
 
+.auth-section h3 {
+  background-color: #fff3cd;
+  border: 1px solid #ffe08a;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #856404;
+  width: fit-content;
+  margin: 20px auto 0 auto; 
+}
+
 .header-content {
     display: flex;
 		flex-direction: column;
